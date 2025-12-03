@@ -1,0 +1,30 @@
+Aim
+
+To implement a Distance Vector Routing Protocol (DVR) to find the shortest path.
+
+Theory (Very Simple)
+
+DVR is based on the Bellman-Ford algorithm.
+Each router maintains a table of distances to all nodes. Routers exchange tables with neighbors and update routes using:
+
+Dx(y) = min { C(x,v) + Dv(y) }
+
+This repeats until all routing tables become stable.
+
+Procedure
+
+Enter number of nodes.
+
+Enter distances between nodes.
+
+Generate initial routing tables.
+
+Exchange tables between routers.
+
+Update routes using Bellman-Ford formula.
+
+Display final shortest paths for each node.
+
+Conclusion
+
+Distance Vector Routing was implemented and the shortest routes between nodes were calculated using Bellman-Ford updates.
