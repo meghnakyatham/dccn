@@ -1,0 +1,30 @@
+Aim
+
+To simulate Go-Back-N (GBN) and Selective Repeat (SR) sliding window protocols.
+
+Theory (Very Simple)
+
+Flow control prevents the sender from overwhelming the receiver.
+Sliding window allows sending multiple frames:
+
+Go-Back-N – If one frame is lost, the sender retransmits that frame and all frames after it.
+
+Selective Repeat – Only the lost frame is retransmitted, making it more efficient.
+
+Procedure
+
+Enter number of frames to be sent.
+
+Send frames 1 to N.
+
+Randomly mark one frame as lost.
+
+For GBN: retransmit that frame and all after it.
+
+For SR: retransmit only the lost frame.
+
+Display received data.
+
+Conclusion
+
+Both Go-Back-N and Selective Repeat ARQ were implemented. SR was shown to be more efficient as it retransmits only the damaged frame.
