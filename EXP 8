@@ -1,0 +1,26 @@
+Aim
+
+To develop a DNS client-server program that resolves hostnames to IP addresses and vice-versa.
+
+Theory (Very Simple)
+
+DNS translates domain names (like google.com) into IP addresses.
+A DNS server stores mappings, and a DNS client sends queries to get the matching result.
+
+Procedure
+
+Start a UDP server with a predefined DNS table.
+
+Accept hostname or IP from client.
+
+Server checks its dictionary.
+
+If match found, send the mapped value.
+
+If not found, reply “No record found”.
+
+Display result at client side.
+
+Conclusion
+
+A simple DNS system was created using UDP sockets. The client successfully resolved hostnames to IP addresses and performed reverse lookups.
