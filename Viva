@@ -1,0 +1,45 @@
+1. TCP - Transmission Control Protocol: delivery from source to destination
+2. RTT - Round Trip Travel: Amount of time taken by the packet to travel from the source to the destination and back 
+3. OSI - OPEN SYSTEM INTERCONNECTION 
+- THIS MODEL IS USED TO DIVIDE THE NETWORK COMMUNICATION PROCESS INTO SMALLER AND SIMPLER STEPS 
+- THIS MODEL ALSO PROVIDES THE MEANS OF CHANGING FUNCTIONALITIES IN ONE LAYER WITHOUT CHANGING THE OTHER LAYERS' FUNCTIONALITIES 
+4. OSI MODEL: 7 LAYERS 
+- PHYSICAL -> DATA LINK -> NETWORK -> TRANSPORT -> SESSION -> PRESENTATION -> APPLICATION 
+5. Interoperability = different systems that are manufactured differently or uses different technologies working together without problems.
+6. protocols: protocols are set of rules that 2 devices that wants to communicate to each other must follow. 
+7. PPP is a protocol that connects two devices directly and manages data transfer between them.
+8. Data Link Layer -> 2 types: 1. LLC (Logical Link layer) - upper sublayer 2. Media Access Control -lower sublayer
+9. DNS, Domain Name System (Service) Protocol - Application layer protocol
+10. DHCP, Dynamic Host Configuration protocol  - application layer protocol
+11. ICMP: Internet Control Message Protocol: ICMP is a network-layer protocol used to send error messages and test connectivity between devices.
+12. 1. Physical Layer
+
+Carries raw bits (0s and 1s) over the physical medium like cables and signals.
+
+2. Data Link Layer
+
+Makes data error-free for the Physical Layer by framing and MAC addressing.
+
+3. Network Layer
+
+Handles IP addressing and routing to send data across different networks.
+
+4. Transport Layer
+
+Provides reliable or fast delivery using TCP/UDP and handles end-to-end communication.
+
+5. Session Layer
+
+Creates, manages, and ends communication sessions between devices.
+
+6. Presentation Layer
+
+Converts data format (encryption, compression, encoding) so devices can understand each other.
+
+7. Application Layer
+
+Provides network services to users (like email, browsing, file transfer).
+
+13. IP address: An IP address is a unique number given to every device on a network so it can be identified and communicate with other devices.
+14. Port address: A port address is a unique number used to identify a specific application or service running on a device.
+15. Bandwidth refers to the maximum amount of data that can be transmitted over a network connection per second.
