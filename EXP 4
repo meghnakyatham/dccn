@@ -1,0 +1,36 @@
+Aim
+
+To demonstrate different types of network topologies and transmission media using Cisco Packet Tracer.
+
+Theory (Very Simple)
+
+A network topology is the way computers and devices are connected.
+Common topologies:
+
+Bus – All devices connected to one main cable.
+
+Star – Devices connected to a central switch/hub.
+
+Ring – Devices connected in a circular loop.
+
+Mesh – Every device connects to every other device.
+
+Tree/Hybrid – Combination of bus and star structures.
+
+Transmission media include copper cables, fiber cables, and wireless signals.
+
+Procedure
+
+Open Packet Tracer.
+
+For each topology (Bus, Star, Ring, Mesh, Tree), place PCs and connect using suitable cables.
+
+Add transmission media such as straight-through cable, cross-over cable, fiber cable, and wireless access point.
+
+Test connectivity using ping from one PC to another.
+
+Observe packet movement in simulation mode.
+
+Conclusion
+
+Different network topologies and transmission media were successfully created and tested in Packet Tracer, showing how networks are structured and how data travels between devices.
