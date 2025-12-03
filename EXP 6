@@ -2,14 +2,43 @@ Aim
 
 To simulate Go-Back-N (GBN) and Selective Repeat (SR) sliding window protocols.
 
-Theory (Very Simple)
+Expanded Theory (Simple & Clear)
 
-Flow control prevents the sender from overwhelming the receiver.
-Sliding window allows sending multiple frames:
+Flow control ensures that the sender does not overwhelm the receiver with too much data. In networks, data is divided into frames, and the receiver must be able to process them at the correct speed.
 
-Go-Back-N – If one frame is lost, the sender retransmits that frame and all frames after it.
+To manage this, Sliding Window Protocols are used. They allow the sender to transmit multiple frames before waiting for an acknowledgment.
 
-Selective Repeat – Only the lost frame is retransmitted, making it more efficient.
+Sliding Window Concept
+
+The sender maintains a “window” of frames it can send without waiting for ACKs.
+
+The receiver also has a window of frames it can accept.
+
+This makes transmission faster and more efficient than sending one frame at a time.
+
+Go-Back-N ARQ (Automatic Repeat Request)
+
+If a frame is lost or damaged, the receiver discards that frame and all frames after it.
+
+The sender must retransmit that frame and all subsequent frames, even if they were correct.
+
+It is simple but wastes bandwidth on noisy networks.
+
+Selective Repeat ARQ
+
+Only the erroneous frame is retransmitted.
+
+The receiver stores correctly received frames even if they come out of order.
+
+More efficient but requires more memory and logic at the receiver.
+
+Key Differences
+
+Go-Back-N retransmits multiple frames, while Selective Repeat retransmits only the lost frame.
+
+Go-Back-N requires less complexity and storage; Selective Repeat needs more buffer and sorting.
+
+These protocols form the basis of TCP flow control in real networks.
 
 Procedure
 
