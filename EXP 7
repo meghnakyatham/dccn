@@ -2,14 +2,34 @@ Aim
 
 To implement a Distance Vector Routing Protocol (DVR) to find the shortest path.
 
-Theory (Very Simple)
+Expanded Theory (Simple & Clear)
 
-DVR is based on the Bellman-Ford algorithm.
-Each router maintains a table of distances to all nodes. Routers exchange tables with neighbors and update routes using:
+Routing protocols help routers choose the best path to send data between networks. Distance Vector Routing (DVR) is one of the oldest and simplest routing techniques.
 
-Dx(y) = min { C(x,v) + Dv(y) }
+How DVR Works
 
-This repeats until all routing tables become stable.
+Each router maintains a distance vector table that stores the distance to all other destinations in the network. The distance is usually measured in “hops.”
+
+Routers exchange their tables with their neighbors periodically.
+Based on this information, they update their own tables using the Bellman-Ford Algorithm:
+
+Properties of DVR
+
+Simple and easy to implement.
+
+Updates happen periodically or when a link changes.
+
+Routers do not have the full topology, only neighbor information.
+
+Problems
+
+Slow convergence.
+
+Count-to-infinity problem (routing loops).
+
+More traffic due to frequent updates.
+
+Despite its limitations, DVR forms the basis of early routing algorithms like RIP (Routing Information Protocol).
 
 Procedure
 
