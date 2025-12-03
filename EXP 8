@@ -2,11 +2,48 @@ Aim
 
 To develop a DNS client-server program that resolves hostnames to IP addresses and vice-versa.
 
-Theory (Very Simple)
+Expanded Theory (Simple & Clear)
 
-DNS translates domain names (like google.com) into IP addresses.
-A DNS server stores mappings, and a DNS client sends queries to get the matching result.
+The Domain Name System (DNS) is an essential service that converts human-friendly names such as www.google.com
+ into machine-friendly IP addresses like 142.250.190.68.
 
+1. DNS Structure
+
+DNS is a distributed hierarchical system. It consists of:
+
+Root servers
+
+Top-Level Domain (TLD) servers (like .com, .org)
+
+Authoritative DNS servers (store actual domain→IP mappings)
+
+2. DNS Server
+
+Stores domain names and their corresponding IP addresses.
+
+Responds to client queries.
+
+Can perform forward lookup (name → IP) and reverse lookup (IP → name).
+
+3. DNS Client (Resolver)
+
+Sends queries to the DNS server.
+
+Takes user input (hostname or IP).
+
+Displays the resolved address.
+
+4. How DNS Resolution Works
+
+Client sends a query to DNS server.
+
+Server checks its database or cache.
+
+If record exists, it returns the answer.
+
+If not, returns “No record found.”
+
+DNS generally uses UDP port 53 for queries because it is fast. For large responses, it may use TCP port 53.
 Procedure
 
 Start a UDP server with a predefined DNS table.
