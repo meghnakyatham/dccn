@@ -1,0 +1,27 @@
+Aim
+
+To implement error detection and correction techniques using CRC and Hamming Code.
+
+Theory (Very Simple)
+
+CRC adds extra bits (FCS) to detect errors. If the receiver divides received data by the same polynomial and gets remainder 0, data is correct.
+
+Hamming Code adds parity bits at positions 1, 2, 4, 8… These parity bits help detect and correct single-bit errors.
+
+Procedure
+
+Enter the data bits.
+
+Calculate parity bits using XOR.
+
+Form the encoded 7-bit or 8-bit Hamming Code.
+
+Enter the received data bits.
+
+Calculate the error position using parity checks.
+
+Correct the error if found.
+
+Conclusion
+
+CRC and Hamming Code were successfully implemented, and errors were detected and corrected using parity calculations.
