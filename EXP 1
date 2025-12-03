@@ -1,0 +1,15 @@
+Aim: Study of basic network command and Network configuration commands. 
+Apparatus (Software): Command Prompt 
+Procedure: To do this EXPERIMENT- follows these steps: 
+THEORY:
+1. ipconfig: This command is used to display the information about current IP configuration including IP address, subnet mask, default gateway
+2. ipconfig/all: This command is used to display the detailed information about the IP configuration including the DNS details, and MAC address details, DHCP
+3. systeminfo: This command is used to display the detailed system configuration information including the OS, RAM, and netword cards information
+4. help color: This command is used to display the information about the colors to change the color of the text or background of command prompt
+5. color 6: This command is used to change the color of the text and the background 
+6. netstat: this command is used to display the active network connections, routing tables, and listening ports
+7. ping: this command is used to send ICMP Echo request packet to the target host to check if it is reachable
+8. hostname: This command is used to display the name of the device
+9. arp: This command is used to display the arp ( address resolution protocol) table which shows the mapping of ip addresses to mac address
+10. tasklist: this command is used to display the list of all the running processes
+11. tracert: this command is used to trace the route of the paths that are used by the packets to reach to their destination host
