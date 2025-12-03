@@ -1,0 +1,52 @@
+Aim
+
+To capture and study the TCP Three-Way Handshake process using Wireshark and understand the roles of SYN, SYN-ACK, and ACK packets in establishing a TCP connection. 
+
+
+Theory (Very Simple & Short)
+
+TCP is a connection-oriented protocol, which means it must create a reliable connection before sending data.
+This connection is created using the Three-Way Handshake, which happens in three steps:
+
+SYN – The client sends a request to start communication.
+
+SYN-ACK – The server accepts the request and responds back.
+
+ACK – The client confirms, and the connection is officially established.
+
+This process ensures both devices agree on starting communication and synchronize their sequence numbers. Wireshark helps capture these packets so we can see exactly how the connection begins. 
+
+
+Procedure (Short & Easy)
+
+Open Wireshark and start capturing packets on the active network interface.
+
+Open a web browser and visit http://example.com
+ to generate TCP traffic.
+
+Stop the capture after the page loads.
+
+Apply the filter tcp to see only TCP packets.
+
+Identify the handshake:
+
+- Look for the SYN packet (client → server).
+
+- Then find the SYN-ACK packet (server → client).
+
+- Then find the ACK packet (client → server).
+
+Click the packets to view sequence numbers and acknowledgment numbers.
+
+To calculate RTT:
+
+- Right-click the SYN packet → “Set Time Reference.”
+
+- Check the time difference when the SYN-ACK arrives. 
+
+
+Conclusion
+
+Using Wireshark, the complete TCP Three-Way Handshake (SYN → SYN-ACK → ACK) was successfully captured and analyzed. The packets clearly showed how the client and server synchronize and establish a reliable TCP connection, along with the RTT calculated from the time difference between the SYN and SYN-ACK packets. 
+
+Exp 3_.TCP Three-Way Handshake
