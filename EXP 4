@@ -2,22 +2,91 @@ Aim
 
 To demonstrate different types of network topologies and transmission media using Cisco Packet Tracer.
 
-Theory (Very Simple)
+Theory (Expanded, Simple, and Easy)
 
-A network topology is the way computers and devices are connected.
-Common topologies:
+A network topology refers to the physical or logical arrangement of computers, switches, routers, and communication links in a network. Understanding topologies is essential for designing efficient, reliable, and cost-effective networks.
 
-Bus – All devices connected to one main cable.
+1. Bus Topology
 
-Star – Devices connected to a central switch/hub.
+All devices are connected to a single central cable called a bus.
 
-Ring – Devices connected in a circular loop.
+Only one device transmits at a time.
 
-Mesh – Every device connects to every other device.
+Failure of the main cable affects the entire network.
 
-Tree/Hybrid – Combination of bus and star structures.
+Shown on Page 2 image, where multiple PCs connect to one horizontal line. 
 
-Transmission media include copper cables, fiber cables, and wireless signals.
+Exp 4_ Network Topology (2)
+
+2. Star Topology
+
+All devices connect to a central hub or switch.
+
+If one device fails, others continue working.
+
+Common in modern LANs because it's reliable and easy to manage.
+
+3. Ring Topology
+
+Devices are connected in a circular loop.
+
+Data travels in one direction around the ring using a token (Token Ring network).
+
+Failure of any device breaks the entire ring unless redundant paths exist.
+
+Page 2 image clearly shows the circular connection. 
+
+Exp 4_ Network Topology (2)
+
+4. Mesh Topology
+
+Every device is connected to every other device.
+
+Provides full redundancy and reliability.
+
+Very expensive due to high cabling and port requirements.
+
+Used in networks where reliability is critical.
+
+5. Tree / Hybrid Topology
+
+Combines features of star and bus topologies.
+
+A central backbone cable connects multiple star networks.
+
+Easy to scale and manage as the network grows.
+
+Transmission Media (Expanded)
+
+Transmission media carry data signals between devices. Packet Tracer provides different types:
+
+1. Copper Cables (Wired)
+
+Straight-through → PC to switch / switch to router
+
+Cross-over → PC to PC or switch to switch
+
+Coaxial → Used in old bus networks
+
+Affordable and easy to install
+
+2. Fiber-Optic Cable
+
+Very high speed
+
+Long-distance communication
+
+Used between routers, servers, and backbone networks
+
+3. Wireless Media
+
+Uses radio waves
+
+Requires Access Points (APs)
+
+Easy to install and suitable for mobile devices
+
+Demonstrated by adding wireless PCs/laptops
 
 Procedure
 
