@@ -2,12 +2,50 @@ Aim
 
 To implement error detection and correction techniques using CRC and Hamming Code.
 
-Theory (Very Simple)
+Expanded Theory (Simple & Clear)
 
-CRC adds extra bits (FCS) to detect errors. If the receiver divides received data by the same polynomial and gets remainder 0, data is correct.
+In digital communication, data sent from one device to another may get changed due to noise, interference, or faulty channels. Therefore, error detection and correction techniques are used to ensure that the received data is accurate.
 
-Hamming Code adds parity bits at positions 1, 2, 4, 8… These parity bits help detect and correct single-bit errors.
+1. Cyclic Redundancy Check (CRC)
 
+CRC is an error-detection method where the sender performs a polynomial division on the data.
+
+The sender adds extra bits called Frame Check Sequence (FCS) to the end of the message.
+
+This FCS is chosen so that the entire message (data + CRC bits) becomes divisible by a predetermined generator polynomial.
+
+The receiver performs the same division.
+
+If the remainder is zero, the data is assumed to be correct; otherwise, an error is detected.
+
+CRC is widely used in networks because it can detect common types of errors such as:
+
+single-bit errors
+
+double-bit errors
+
+burst errors (when multiple bits are corrupted together)
+
+2. Hamming Code
+
+Hamming Code is an error-correcting code, not just error-detecting.
+Invented by Richard Hamming, it uses redundancy bits placed at positions that are powers of 2 (1, 2, 4, 8…).
+
+Characteristics:
+
+Detects two-bit errors
+
+Corrects one-bit error without needing retransmission
+
+How it works:
+
+Parity bits are calculated based on the positions of the data bits.
+
+If any bit is changed during transmission, the parity checks generate a binary number that directly points to the incorrect bit.
+
+This makes correction very simple.
+
+Thus, CRC detects errors and Hamming Code corrects errors. Together, they form the basis of reliable digital communication.
 Procedure
 
 Enter the data bits.
